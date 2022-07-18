@@ -5,7 +5,9 @@ export const Counter = () => {
   return (
     <div>
       <h3>Update the count and edit src/App.tsx, state is preserved</h3>
-      <button onClick={() => setCount((c) => c + 1)}>Count - {count}</button>
+      <p>{count}</p>
+      <button onClick={() => setCount((c) => c + 1)}> + </button>
+      <button onClick={() => setCount((c) => c - 1)}> - </button>
     </div>
   )
 }
